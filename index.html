@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MasterStudy - Education WordPress Theme</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Add Font Awesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full z-50">
+      <nav class="container mx-auto px-4">
+        <div class="flex items-center justify-between py-4">
+          <div class="flex items-center">
+            <img src="./assets/images/logo.svg" alt="MasterStudy" class="h-8" />
+          </div>
+
+          <!--  Navigation -->
+          <div class="hidden lg:flex items-center space-x-8">
+            <a href="#" class="text-gray-700 hover:text-pink-500">DEMOS</a>
+            <a href="#" class="text-gray-700 hover:text-pink-500">FEATURES</a>
+            <a href="#" class="text-gray-700 hover:text-pink-500">PAGES</a>
+            <a href="#" class="text-gray-700 hover:text-pink-500">COURSES</a>
+            <a href="#" class="text-gray-700 hover:text-pink-500"
+              >COURSE BUILDER</a
+            >
+            <a href="#" class="text-green-500 hover:text-green-600"
+              >WHAT'S NEW</a
+            >
+          </div>
+
+          <!-- Right Side Buttons -->
+          <div class="flex items-center space-x-4">
+            <button
+              class="bg-blue-900 text-white px-6 py-2 rounded-full hover:bg-blue-800"
+            >
+              PURCHASE
+            </button>
+            <button class="lg:hidden" id="mobile-menu-button">
+              <i class="fas fa-bars text-gray-700"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- for Mobile  -->
+        <div class="lg:hidden hidden" id="mobile-menu">
+          <div class="py-4 space-y-4">
+            <a href="#" class="block text-gray-700 hover:text-pink-500"
+              >DEMOS</a
+            >
+            <a href="#" class="block text-gray-700 hover:text-pink-500"
+              >FEATURES</a
+            >
+            <a href="#" class="block text-gray-700 hover:text-pink-500"
+              >PAGES</a
+            >
+            <a href="#" class="block text-gray-700 hover:text-pink-500"
+              >COURSES</a
+            >
+            <a href="#" class="block text-gray-700 hover:text-pink-500"
+              >COURSE BUILDER</a
+            >
+            <a href="#" class="block text-green-500 hover:text-green-600"
+              >WHAT'S NEW</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="pt-20">
+      <div class="container mx-auto px-4 py-16">
+        <div class="flex flex-col lg:flex-row items-center justify-between">
+          <!-- Left Content -->
+          <div class="lg:w-1/2 space-y-6">
+            <h1 class="text-4xl lg:text-6xl font-bold text-blue-900">
+              THE BEST EDUCATION
+              <br />
+              WORDPRESS THEME
+            </h1>
+            <p class="text-gray-600">
+              Featured on <span class="text-green-500">envato tuts+</span>
+            </p>
+            <div class="flex space-x-4">
+              <button
+                class="bg-pink-500 text-white px-8 py-3 rounded-full hover:bg-pink-600"
+              >
+                WATCH
+              </button>
+              <button
+                class="bg-blue-900 text-white px-8 py-3 rounded-full hover:bg-blue-800"
+              >
+                GET NOW
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Content - Image -->
+          <div class="lg:w-1/2 mt-8 lg:mt-0">
+            <img
+              src="./assets/images/services-img.webp"
+              alt="Education Illustration"
+              class="w-full"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Pink Features Section -->
+      <div class="bg-pink-500 text-white py-16">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <!-- Feature 1 -->
+            <div class="text-center space-y-4">
+              <div class="text-3xl mb-2 text-yellow-300">
+                <i class="fas fa-cogs"></i>
+              </div>
+              <h3 class="text-2xl font-bold">
+                POWERFUL LEARNING MANAGEMENT SYSTEM
+              </h3>
+              <p class="text-white/90">
+                Outstanding features for highly customizable Courses, Units,
+                Lessons, and Quizzes
+              </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="text-center space-y-4">
+              <div class="text-3xl mb-2 text-yellow-300">
+                <i class="fas fa-tasks"></i>
+              </div>
+              <h3 class="text-2xl font-bold">EFFORTLESSLY MANAGE COURSES</h3>
+              <p class="text-white/90">
+                User-friendly Course Management Powered by Masterstudy LMS
+                Plugin
+              </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="text-center space-y-4">
+              <div class="text-3xl mb-2 text-yellow-300">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h3 class="text-2xl font-bold">24/7 PROFESSIONAL SUPPORT</h3>
+              <p class="text-white/90">
+                We care about our customers and provide free 24/7 support. Ask
+                your questions via Ticket System.
+              </p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="text-center space-y-4">
+              <div class="text-3xl mb-2 text-yellow-300">
+                <i class="fas fa-screwdriver-wrench"></i>
+              </div>
+              <h3 class="text-2xl font-bold">Easily Sell Courses Online</h3>
+              <p class="text-white/90">
+                Enjoy the flexibility of education WordPress theme and easily
+                manage online sales
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blue Info Section -->
+      <div class="bg-[#263142] text-white py-16">
+        <div class="container mx-auto px-4">
+          <div
+            class="text-center grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12"
+          >
+            <h2 class="text-4xl font-bold mb-6">
+              MasterStudy is the best choice for everyone!
+            </h2>
+            <p class="text-lg text-gray-300">
+              A fully packed education WordPress theme for everyone who wants to
+              create online courses, coaching, and language centers, eLearning
+              platforms, and deliver knowledge worldwide. It is a perfect
+              education theme that was designed to meet the needs of the
+              learning industry.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <!-- Info 1 -->
+            <div class="text-center space-y-4">
+              <h3 class="text-2xl font-bold text-yellow-400">
+                Higher education
+              </h3>
+              <p class="text-gray-300">
+                Implement the top-notch learning technology of LMS and create a
+                perfect workflow within any educational institution.
+              </p>
+            </div>
+
+            <!-- Info 2 -->
+            <div class="text-center space-y-4">
+              <h3 class="text-2xl font-bold text-pink-500">
+                Individual instructors
+              </h3>
+              <p class="text-gray-300">
+                Deliver skills and knowledge online to thousands of students and
+                create a productive learning environment.
+              </p>
+            </div>
+
+            <!-- Info 3 -->
+            <div class="text-center space-y-4">
+              <h3 class="text-2xl font-bold text-cyan-400">Online Platform</h3>
+              <p class="text-gray-300">
+                Build a universal online learning platform for everyone and
+                provide an exceptional experience.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Why Choose MasterStudy Section -->
+      <div class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col lg:flex-row items-center gap-12">
+            <!-- Left side image -->
+            <div class="lg:w-1/2">
+              <img
+                src="./assets/images/word_press_lms.png"
+                alt="Why Choose MasterStudy"
+                class="w-full"
+              />
+            </div>
+
+            <!-- Right side content -->
+            <div class="lg:w-1/2">
+              <h2 class="text-4xl font-bold text-gray-800 mb-6">
+                Why Choose MasterStudy
+              </h2>
+              <p class="text-gray-600 mb-6">
+                Masterstudy allows you to create courses step by step. We gained
+                experience from the most popular eLearning website templates and
+                made a universal recipe for the ideal learning management
+                system. The full package of
+                <a href="#" class="text-blue-600 hover:underline"
+                  >WordPress LMS plugin</a
+                >
+                and education theme will let you build a great eLearning
+                platform.
+              </p>
+
+              <h3 class="text-2xl font-bold text-gray-800 mb-4">
+                Core Features
+              </h3>
+              <p class="text-gray-600 mb-6">
+                Masterstudy provides awesome features for creating online
+                courses and lessons. Clear and agile usabilities of online
+                education WordPress theme will make you feel like a professional
+                IT specialist. We guarantee you an exceptional experience.
+              </p>
+
+              <!-- Features Grid -->
+              <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <div class="text-sm text-gray-600">
+                  <i class="fas fa-check text-blue-600 mr-2"></i>LMS Admin UI/UX
+                </div>
+                <div class="text-sm text-gray-600">
+                  <i class="fas fa-check text-blue-600 mr-2"></i>User Profile
+                </div>
+                <div class="text-sm text-gray-600">
+                  <i class="fas fa-check text-blue-600 mr-2"></i>Drip Content
+                </div>
+                <div class="text-sm text-gray-600">
+                  <i class="fas fa-check text-blue-600 mr-2"></i>Frontend Course
+                  Builder
+                </div>
+                <div class="text-sm text-gray-600">
+                  <i class="fas fa-check text-blue-600 mr-2"></i>Zoom Conference
+                </div>
+                <div class="text-sm text-gray-600">
+                  <i class="fas fa-check text-blue-600 mr-2"></i>Course Bundles
+                </div>
+                <div class="text-sm text-gray-600">
+                  <i class="fas fa-check text-blue-600 mr-2"></i>Lesson Types
+                </div>
+                <div class="text-sm text-gray-600">
+                  <i class="fas fa-check text-blue-600 mr-2"></i>Live Streams
+                </div>
+                <div class="text-sm text-gray-600">
+                  <i class="fas fa-check text-blue-600 mr-2"></i>Monetize
+                </div>
+                <div class="text-sm text-gray-600">
+                  <i class="fas fa-check text-blue-600 mr-2"></i>Quiz Settings
+                </div>
+                <div class="text-sm text-gray-600">
+                  <i class="fas fa-check text-blue-600 mr-2"></i>SCORM
+                  Integration
+                </div>
+                <div class="text-sm text-gray-600">
+                  <i class="fas fa-check text-blue-600 mr-2"></i>Payment methods
+                </div>
+                <div class="text-sm text-gray-600">
+                  <i class="fas fa-check text-blue-600 mr-2"></i>Certificate
+                  Builder
+                </div>
+                <div class="text-sm text-gray-600">
+                  <i class="fas fa-check text-blue-600 mr-2"></i>BuddyPress
+                </div>
+                <div class="text-sm text-gray-600">
+                  <i class="fas fa-check text-blue-600 mr-2"></i>Statistics and
+                  Payouts
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Manage Courses Section -->
+      <div class="bg-purple-900 py-16">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-4xl font-bold text-white mb-4">MANAGE COURSES</h2>
+          <p class="text-gray-300 mb-12">
+            Take full control over the courses. Here are some features you
+            actually need to use.
+          </p>
+
+          <!-- Course Management Illustration -->
+          <div
+            class="relative h-[400px] bg-cover bg-center"
+            style="
+              background-image: url('./assets/images/manage-courses-bg.png');
+            "
+          >
+            <!-- You can add the musical instruments illustration here as overlay -->
+          </div>
+        </div>
+      </div>
+
+      <!-- MasterStudy Pro Addons Section -->
+      <div class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+          <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+            MASTERSTUDY PRO ADDONS INCLUDED
+          </h2>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Certificate Builder -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <img
+                src="./assets/images/certificate-builder.png"
+                alt="Certificate Builder"
+                class="w-full mb-4"
+              />
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Certificate Builder
+              </h3>
+              <p class="text-gray-600">
+                Design your certificate template using the modern and
+                easy-to-use builder.
+              </p>
+            </div>
+
+            <!-- Email Template Manager -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <img
+                src="./assets/images/email-template.png"
+                alt="Email Template Manager"
+                class="w-full mb-4"
+              />
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                Email Template Manager
+              </h3>
+              <p class="text-gray-600">
+                Create different message templates and send users custom
+                notifications.
+              </p>
+            </div>
+
+            <!-- Content Drip -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <img
+                src="./assets/images/content-drip.png"
+                alt="Content Drip"
+                class="w-full mb-4"
+              />
+              <h3 class="text-xl font-bold text-gray-800 mb-2">Content Drip</h3>
+              <p class="text-gray-600">
+                Roll out lessons sequentially in numerical order after
+                completion, or set your own sequence.
+              </p>
+            </div>
+
+            <!-- LMS Forms Editor -->
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+              <img
+                src="./assets/images/forms-editor.png"
+                alt="LMS Forms Editor"
+                class="w-full mb-4"
+              />
+              <h3 class="text-xl font-bold text-gray-800 mb-2">
+                LMS Forms Editor
+              </h3>
+              <p class="text-gray-600">
+                Customize the LMS forms on your website with the professional
+                forms editor
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Friendly Interface Section -->
+      <div class="bg-white section-padding mb-section">
+        <div class="container mx-auto px-4">
+          <div class="flex flex-col lg:flex-row items-center gap-12">
+            <!-- Left side illustration -->
+            <div class="lg:w-1/2">
+              <img
+                src="./assets/images/user-interface.png"
+                alt="User Friendly Interface"
+                class="w-full"
+              />
+            </div>
+
+            <!-- Right side content -->
+            <div class="lg:w-1/2">
+              <h2 class="text-4xl font-bold text-gray-800 mb-6">
+                USER FRIENDLY<br />
+                INTERFACE
+              </h2>
+              <p class="text-gray-600 text-lg">
+                One of the main advantages of MasteStudy is a simple
+                interface.<br />
+                Everything is created for users' convenience.
+              </p>
+              <div class="mt-8">
+                <img
+                  src="./assets/images/chrome-logo.png"
+                  alt="Google Chrome"
+                  class="h-12"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

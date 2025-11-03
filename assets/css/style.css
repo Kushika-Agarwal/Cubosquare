@@ -1,0 +1,13 @@
+/* Global Styles */
+body {
+  margin: 0;
+  padding: 1rem;
+  font-family: "Segoe UI", Roboto, sans-serif;
+  color: #263142;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2 rem;
+}
