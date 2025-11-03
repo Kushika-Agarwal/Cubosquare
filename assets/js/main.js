@@ -12,14 +12,4 @@ $(document).ready(function () {
   });
 
   // Smooth scroll for navigation links
-  $("nav a").on("click", function (e) {
-    e.preventDefault();
-    const href = $(this).attr("href");
-    $("html, body").animate(
-      {
-        scrollTop: $(href).offset().top - 80,
-      },
-      800
-    );
-  });
 });
